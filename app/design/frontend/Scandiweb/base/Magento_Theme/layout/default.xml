@@ -16,7 +16,8 @@
 
         <referenceContainer name="header.container">
             <block class="Magento\Framework\View\Element\Template" name="top.line"
-                   template="Magento_Theme::topline.phtml" before="header.panel.wrapper"/>
+                   template="Magento_Theme::topline.phtml" before="header.panel.wrapper"
+                   ifconfig="carriers/freeshipping/active"/>
         </referenceContainer>
 
         <referenceContainer name="page.bottom.container">
