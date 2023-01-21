@@ -1,14 +1,22 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Magento_Theme::css/freeshipping.css"/>
+    </head>
     <body>
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/scandiweb.png</argument>
                 <argument name="logo_width" xsi:type="number">100</argument>
                 <argument name="logo_height" xsi:type="number">100</argument>
-                <argument name="logo_alt" xsi:type="string">Logo name</argument>
+                <argument name="logo_alt" xsi:type="string">Scandiweb</argument>
             </arguments>
         </referenceBlock>
+
+        <referenceContainer name="header.container">
+            <block class="Magento\Framework\View\Element\Template" name="top.line"
+                   template="Magento_Theme::topline.phtml" before="header.panel.wrapper"/>
+        </referenceContainer>
     </body>
 </page>
