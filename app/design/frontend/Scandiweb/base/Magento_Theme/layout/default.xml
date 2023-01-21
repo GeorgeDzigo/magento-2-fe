@@ -18,5 +18,11 @@
             <block class="Magento\Framework\View\Element\Template" name="top.line"
                    template="Magento_Theme::topline.phtml" before="header.panel.wrapper"/>
         </referenceContainer>
+
+        <referenceContainer name="page.bottom.container">
+            <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe"
+                   template="Magento_Newsletter::subscribe.phtml" ifconfig="newsletter/general/active"
+            />
+        </referenceContainer>
     </body>
 </page>
